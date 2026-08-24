@@ -1,0 +1,28 @@
+{
+  "name": "@portfolio-ai/database",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@portfolio-ai/types": "*",
+    "@portfolio-ai/schemas": "*",
+    "drizzle-orm": "^0.40.0",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.5",
+    "typescript": "^5.8.2",
+    "rimraf": "^6.0.1",
+    "@types/node": "^22.13.10"
+  }
+}

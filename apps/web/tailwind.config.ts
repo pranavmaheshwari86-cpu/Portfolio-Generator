@@ -1,0 +1,98 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    '../../packages/portfolio-ui/src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'surface-container-lowest': '#0e0e0d',
+        'surface-container-low': '#1c1c1a',
+        'surface-container': '#20201e',
+        'surface-container-high': '#2a2a29',
+        'surface-container-highest': '#353533',
+        'surface-variant': '#353533',
+        'surface-dim': '#131312',
+        'surface-bright': '#3a3938',
+        'surface-tint': '#abd551',
+        surface: '#131312',
+        background: '#131312',
+
+        'on-surface': '#e5e2df',
+        'on-surface-variant': '#c4c9b3',
+        'inverse-surface': '#e5e2df',
+        'inverse-on-surface': '#31302f',
+        outline: '#8e937f',
+        'outline-variant': '#444938',
+
+        primary: '#c7f16a',
+        'primary-container': '#abd551',
+        'primary-fixed': '#c7f16a',
+        'primary-fixed-dim': '#abd551',
+        'on-primary': '#141f00',
+        'on-primary-fixed': '#141f00',
+        'on-primary-fixed-variant': '#384e00',
+        'on-primary-container': '#506e00',
+        'inverse-primary': '#4b6700',
+
+        secondary: '#f0bf64',
+        'secondary-fixed': '#ffd790',
+        'secondary-fixed-dim': '#e1b25a',
+        'secondary-container': '#e5b45b',
+        'on-secondary': '#3f2e00',
+        'on-secondary-fixed': '#271900',
+        'on-secondary-container': '#533b00',
+        'on-secondary-fixed-variant': '#5e4200',
+
+        tertiary: '#ffffff',
+        'tertiary-container': '#dbe3f8',
+        'tertiary-fixed': '#dbe3f8',
+        'tertiary-fixed-dim': '#b8c7e1',
+        'on-tertiary': '#283748',
+        'on-tertiary-container': '#3f4e62',
+        'on-tertiary-fixed': '#0d1c2f',
+        'on-tertiary-fixed-variant': '#39485c',
+
+        error: '#ffb4ab',
+        'error-container': '#93000a',
+        'on-error': '#690005',
+        'on-error-container': '#ffdad6',
+      },
+      fontFamily: {
+        'display-hero': ['"Instrument Serif"', 'Georgia', 'serif'],
+        'headline-lg': ['Geist', 'sans-serif'],
+        'headline-md': ['Geist', 'sans-serif'],
+        'body-lg': ['Geist', 'sans-serif'],
+        'body-md': ['Geist', 'sans-serif'],
+        'metadata-sm': ['"JetBrains Mono"', 'monospace'],
+        'label-caps': ['"JetBrains Mono"', 'monospace'],
+        sans: ['Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+      },
+      fontSize: {
+        'display-hero': ['80px', { lineHeight: '84px', letterSpacing: '-0.04em' }],
+        'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.03em' }],
+        'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '-0.02em' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '-0.015em' }],
+        'body-md': ['16px', { lineHeight: '24px', letterSpacing: '-0.01em' }],
+        'metadata-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.05em' }],
+        'label-caps': ['11px', { lineHeight: '14px', letterSpacing: '0.1em' }],
+      },
+      spacing: {
+        'stack-sm': '16px',
+        'stack-md': '24px',
+        'stack-lg': '48px',
+        gutter: '32px',
+        'container-padding-x': '48px',
+        'section-padding-y': '96px',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;

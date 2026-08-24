@@ -1,0 +1,37 @@
+# Dependencies & Builds
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+.cache/
+*.log
+coverage/
+.DS_Store
+Thumbs.db
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Environment Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Internal Planning & Architecture Documents (Do not upload to GitHub)
+PRD.md
+TRD.md
+Design.md
+rules.md
+AGENTS.md
+.code-review-graph.md
+
+# Agent, Testing & Intelligence Artifacts
+.playwright-mcp/
+code-review-graph/
+graphify-out/
+memory/
+scratch/
