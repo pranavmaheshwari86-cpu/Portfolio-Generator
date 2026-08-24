@@ -8,6 +8,8 @@ import { PortfoliosModule } from './portfolios/portfolios.module.js';
 import { GenerationsModule } from './generations/generations.module.js';
 import { AnalyticsModule } from './analytics/analytics.module.js';
 
+import { ContactModule } from './contact/contact.module.js';
+
 @Module({
   imports: [
     AuthModule,
@@ -17,6 +19,7 @@ import { AnalyticsModule } from './analytics/analytics.module.js';
     PortfoliosModule,
     GenerationsModule,
     AnalyticsModule,
+    ContactModule,
   ],
   controllers: [HealthController],
 })

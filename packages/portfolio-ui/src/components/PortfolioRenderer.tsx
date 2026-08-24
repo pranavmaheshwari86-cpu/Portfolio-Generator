@@ -65,7 +65,7 @@ export const PortfolioRenderer: React.FC<PortfolioRendererProps> = ({ portfolio,
         return <ExperienceTimeline key={section.id} section={section} designDNA={designDNA} />;
 
       case 'contact':
-        return <ContactSplit key={section.id} section={section} designDNA={designDNA} />;
+        return <ContactSplit key={section.id} section={section} designDNA={designDNA} portfolioId={portfolio.id} />;
 
       default:
         return null;
