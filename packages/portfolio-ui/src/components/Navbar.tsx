@@ -1,6 +1,5 @@
 import React from 'react';
 import type { PortfolioNavigation, DesignDNA } from '@portfolio-ai/types';
-import { cn } from '../utils.js';
 
 interface NavbarProps {
   navigation: PortfolioNavigation;

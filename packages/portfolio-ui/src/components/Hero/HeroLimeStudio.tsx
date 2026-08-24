@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContainer } from '../SectionContainer.js';
 import type { PortfolioSection, DesignDNA } from '@portfolio-ai/types';
-import { ArrowUpRight, Terminal, Radio } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 interface HeroProps {
   section: PortfolioSection;

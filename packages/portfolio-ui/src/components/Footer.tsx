@@ -1,6 +1,5 @@
 import React from 'react';
 import type { PortfolioFooter, DesignDNA } from '@portfolio-ai/types';
-import { cn } from '../utils.js';
 
 interface FooterProps {
   footer: PortfolioFooter;

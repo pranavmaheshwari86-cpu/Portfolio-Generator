@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@portfolio-ai/types": "*",
-    "@portfolio-ai/schemas": "*",
     "drizzle-orm": "^0.40.0",
     "postgres": "^3.4.5"
   },

@@ -1,8 +1,7 @@
 import React from 'react';
 import { SectionContainer } from '../SectionContainer.js';
 import type { PortfolioSection, DesignDNA } from '@portfolio-ai/types';
-import { cn } from '../../utils.js';
-import { ExternalLink, Github, ArrowUpRight, Code2 } from 'lucide-react';
+import { Github, ArrowUpRight, Code2 } from 'lucide-react';
 
 interface ProjectProps {
   section: PortfolioSection;

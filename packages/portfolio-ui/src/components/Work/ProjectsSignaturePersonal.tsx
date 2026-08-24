@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContainer } from '../SectionContainer.js';
 import type { PortfolioSection, DesignDNA } from '@portfolio-ai/types';
-import { ArrowRight, Github, ExternalLink, Sparkles } from 'lucide-react';
+import { ArrowRight, Github } from 'lucide-react';
 
 interface ProjectsProps {
   section: PortfolioSection;
@@ -51,7 +51,6 @@ export const ProjectsSignaturePersonal: React.FC<ProjectsProps> = ({ section, de
   const accentColor = designDNA.colorPalette.accent || '#C4956A';
   const surfaceColor = designDNA.colorPalette.surface || '#F2EEE7';
   const borderColor = designDNA.colorPalette.border || '#E3DCD1';
-  const mutedColor = designDNA.colorPalette.muted || '#78716C';
 
   return (
     <SectionContainer id={section.id || 'work'} designDNA={designDNA} className="py-20">

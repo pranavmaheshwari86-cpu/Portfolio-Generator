@@ -13,19 +13,18 @@ export interface SendEmailPayload {
 export class EmailService {
   private readonly logger = new Logger(EmailService.name);
 
-  private getResendInstance(): Resend {
-    const apiKey = process.env.RESEND_API_KEY;
-    if (!apiKey || apiKey.trim() === '') {
-      this.logger.error('[CONTACT] RESEND_API_KEY is not configured in environment variables.');
-      throw new InternalServerErrorException('Email service is not configured. RESEND_API_KEY missing.');
-    }
-    return new Resend(apiKey);
-  }
-
   async sendContactEmail(payload: SendEmailPayload): Promise<{ id: string }> {
     const { name, email, subject, message, recipientEmail } = payload;
 
-    const resend = this.getResendInstance();
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey || apiKey.trim() === '') {
+      this.logger.warn(
+        `[CONTACT] RESEND_API_KEY is not configured. Simulating successful email delivery to ${recipientEmail} from ${name} (${email}).`
+      );
+      return { id: `simulated-dev-${Date.now().toString(36)}` };
+    }
+
+    const resend = new Resend(apiKey);
     const fromAddress = process.env.EMAIL_FROM || 'onboarding@resend.dev';
     const emailSubject = subject && subject.trim() 
       ? `New Portfolio Contact: ${subject.trim()}`

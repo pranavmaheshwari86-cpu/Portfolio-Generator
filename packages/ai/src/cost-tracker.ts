@@ -1,4 +1,4 @@
-import type { TokenUsage, AIProviderName } from '@portfolio-ai/types';
+import type { TokenUsage } from '@portfolio-ai/types';
 
 // Pricing per 1M tokens in USD
 const PRICING_PER_MILLION: Record<string, { input: number; output: number }> = {

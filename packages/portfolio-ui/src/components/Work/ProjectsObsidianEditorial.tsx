@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContainer } from '../SectionContainer.js';
 import type { PortfolioSection, DesignDNA } from '@portfolio-ai/types';
-import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 
 interface ProjectsProps {
   section: PortfolioSection;
@@ -48,7 +48,6 @@ export const ProjectsObsidianEditorial: React.FC<ProjectsProps> = ({ section, de
         ];
 
   const accentColor = designDNA.colorPalette.accent || '#C9A96E';
-  const mutedColor = designDNA.colorPalette.muted || '#9E9B91';
 
   return (
     <SectionContainer id={section.id || 'work'} designDNA={designDNA} className="py-20">

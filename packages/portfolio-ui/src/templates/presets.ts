@@ -1,4 +1,4 @@
-import type { DesignDNA, PortfolioSchema, ProfessionalProfile } from '@portfolio-ai/types';
+import type { DesignDNA, PortfolioSchema } from '@portfolio-ai/types';
 
 export interface TemplateDefinition {
   id: 'obsidian-editorial' | 'lime-studio' | 'signature-personal';

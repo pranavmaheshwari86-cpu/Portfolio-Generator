@@ -36,7 +36,6 @@ export const HeroSignaturePersonal: React.FC<HeroProps> = ({ section, designDNA 
   const accentColor = designDNA.colorPalette.accent || '#C4956A';
   const surfaceColor = designDNA.colorPalette.surface || '#F2EEE7';
   const borderColor = designDNA.colorPalette.border || '#E3DCD1';
-  const mutedColor = designDNA.colorPalette.muted || '#78716C';
 
   return (
     <SectionContainer id={section.id} designDNA={designDNA} className="pt-20 md:pt-28 pb-16">
